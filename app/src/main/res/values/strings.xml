@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">JanPL</string>
+    <array name="generos">
+        <item>terror</item>
+        <item>comédia</item>
+        <item>aventura</item>
+        <item>policial</item>
+    </array>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="12dp"
+    android:background="@drawable/fundo"
+    android:layout_height="wrap_content">
+
+    <ImageView
+
+        android:id="@+id/img_id_itemfoto"
+        android:layout_width="157dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/ambu_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <TextView
+        android:id="@+id/txt_id_itemfoto"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:gravity="center"
+        android:hint="ID"
+        android:textColor="@color/white"
+        android:textSize="42sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toEndOf="@+id/img_id_itemfoto"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <EditText
+        android:id="@+id/edit_titulo_itemfoto"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:hint="título"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_id_itemfoto"></EditText>
+
+
+    <Spinner
+        android:id="@+id/spin_genero_itemfoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:minHeight="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_titulo_itemfoto"></Spinner>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spin_genero_itemfoto">
+
+        <TableRow>
+            <Button
+                android:id="@+id/bt_delete_itemfilme"
+                android:text="delete"
+                android:backgroundTint="@color/red"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+
+                ></Button>
+            <Button
+                android:id="@+id/bt_update_itemfilme"
+                android:text="Update"
+                android:backgroundTint="@color/black"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+
+                ></Button>
+
+
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

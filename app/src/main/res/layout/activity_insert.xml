@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:background="@drawable/fundo"
+    android:layout_height="match_parent"
+    tools:context=".insert">
+
+    <TextView
+        android:id="@+id/txt_titulo_insert"
+        android:text="INSERT"
+        android:textAlignment="center"
+        android:textSize="33sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <ImageView
+
+        android:id="@+id/img_id_itemfoto"
+        android:layout_width="157dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/ambu_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo_insert"></ImageView>
+
+    <EditText
+        android:id="@+id/edit_titulo_itemfoto"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:hint="título"
+        android:textColorHint="@color/black"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_id_itemfoto"></EditText>
+
+
+    <Spinner
+        android:id="@+id/spin_genero_itemfoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:minHeight="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:outlineAmbientShadowColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/edit_titulo_itemfoto"></Spinner>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spin_genero_itemfoto">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bt_insert_insert"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:text="Insert"></Button>
+
+            <Button
+                android:id="@+id/bt_update_itemfilme"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+
+                android:text="Limpar"></Button>
+
+
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
