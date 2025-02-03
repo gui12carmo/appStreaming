@@ -14,6 +14,7 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        //Cria lista da BD
 //        criaLista();
         MySQL bd = new MySQL(getApplicationContext(),1);
      filmes =bd.getFilmes();
